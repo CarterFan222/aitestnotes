@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const noteContent = document.getElementById('note-content');
     const exportBtn = document.getElementById('export-btn');
     const importBtn = document.getElementById('import-btn');
+    const fileLabel = document.querySelector('.file-label');
 
     let notes = JSON.parse(localStorage.getItem('notes')) || [];
     let currentNoteIndex = null;
@@ -56,6 +57,10 @@ document.addEventListener('DOMContentLoaded', () => {
             renderNotes();
         };
         reader.readAsText(file);
+    });
+
+    fileLabel.addEventListener('click', () => {
+        importBtn.click();
     });
 
     renderNotes();
