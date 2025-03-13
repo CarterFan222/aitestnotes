@@ -26,7 +26,8 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
     border-right: 1px solid #444;
     padding: 20px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
 }
 
 .sidebar h2 {
@@ -63,7 +64,8 @@ body {
     width: 70%;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
 }
 
 .main textarea {
