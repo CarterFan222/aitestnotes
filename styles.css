@@ -17,17 +17,19 @@ body {
     width: 80%;
     height: 80%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
+    border-radius: 44px;
     overflow: hidden;
 }
 
 .sidebar {
     width: 30%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(30, 30, 30, 0.6); /* Dark grey with reduced opacity */
     border-right: 1px solid #444;
     padding: 20px;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
+    border-top-left-radius: 44px;
+    border-bottom-left-radius: 44px;
 }
 
 .sidebar h2 {
@@ -62,10 +64,12 @@ body {
 
 .main {
     width: 70%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(30, 30, 30, 0.6); /* Dark grey with reduced opacity */
     padding: 20px;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
+    border-top-right-radius: 44px;
+    border-bottom-right-radius: 44px;
 }
 
 .main textarea {
